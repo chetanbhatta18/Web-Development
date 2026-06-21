@@ -9,7 +9,7 @@
     position:relative;
     height: 100vh;
     background-size: max(1600px,100vw);
-    background-image: url("/assests/images/background-img.jpg");
+    background-image: url("assests/images/background-img.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
