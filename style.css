@@ -1,0 +1,390 @@
+/* css code for main-box including the navbar */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.main-box{
+    position:relative;
+    height: 100vh;
+    background-size: max(1600px,100vw);
+    background-image: url("/assests/images/background-img.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+body{
+    background-color:black ;
+    font-family: "Netflix Sans",'Segeo UI';
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.66;
+    background-color:black;
+}
+.nav .logo img{
+    height: 40px;
+    position: relative;
+}
+.nav{
+    width:80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    position: relative;
+    top: 20px;
+    z-index: 10;
+}
+.sign_inbtn button{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: bold;
+    cursor: pointer;
+}
+.sign_inbtn button:hover{
+    background-color: rgb(211, 45, 45);
+}
+.maintext{
+    margin-top:90px ;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+.text{
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.text-1{
+    width: 60%;
+
+    font-size: -webkit-xxx-large;
+}
+.text-2{
+    font-size: larger;
+}
+.lowertext div{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 45vw;
+}
+.buttons{
+    display: flex;
+
+    justify-content: center;
+}
+.lowertext button{
+    background-color:red;
+    border: 1px solid red;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 15px 40px;
+    font-size: x-large;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.lowertext button:hover{
+    background-color: rgb(211, 45, 45);
+}
+.lowertext input{
+    background-color: rgb(8, 8, 8);
+    border: 1px solid rgb(185, 179, 179);
+    padding: 15px 200px 15px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+  .curve {
+    position: absolute;
+    bottom: -60px;
+    left: -5%;
+    width: 110%;
+    height: 120px;
+    background: radial-gradient(50% 500% at 50% -420%,rgba(64, 97, 231, 0.4) 80%,rgba(0, 0, 0, 0.1) 100%),black;
+    border-radius: 50%;
+    border-bottom: 3px solid #e50914;
+    box-shadow: 0 0 0 3px #e50914;
+  }
+@media screen and (max-width:800px) {
+    .lowertext{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20%;
+        /* width: 900px; */
+        /* justify-content: center; */
+    }
+    .lowertext button{
+        /* display: flex;
+        flex-direction: column; */
+        /* padding: 0px; */
+        /* padding: 5px 40px; */
+        padding: 0px;
+        width: 40%;
+        /* width: 80px; */
+        /* height:5% ; */
+        font-size: small;
+
+    }
+    .buttons{
+        display:  flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lowertext input{
+        padding: 0px;
+        width: 50%;
+    }
+}
+
+/* css codes for trending-section lower than navbar and main-box */
+.trending-section h3{
+    /* color: white; */
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    /* padding-left:120px ; */
+}
+.trending-section{
+    width: 85vw;
+    margin:30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    gap:20px;
+}
+.image{
+    position: relative;
+}
+.rank {
+    position: absolute;
+    bottom: 60px;
+    left: -20px;
+    font-size: 110px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 3px #cecbcb;
+    line-height: 1;
+    z-index: 1;
+    user-select: none;
+  }
+.image1 span{
+    border: 1px solid white;
+    display: inline-block;
+    /* color: white; */
+    color: rgb(255, 255, 255);
+}
+.trending-images{
+    display: flex;
+    justify-content: space-around;
+}
+.image img{
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.image img:hover{
+    transform:scale(1.1);
+}
+.gt-icon{
+    /* color:white; */
+    color: rgb(255, 255, 255);
+    border-radius:10px;
+    background-color: rgb(43, 43, 44);
+    align-self: center;
+    padding: 40px 5px;
+    font-size: x-large;
+}
+
+/* css codes for more reason to join box */
+
+.mrtj{
+    height: 52vh;
+    width: 85vw;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mrtj .tv{
+    border-radius: 10px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    background-color: #1D162B;
+}
+.mrtj h2{
+    color: rgb(242, 237, 237);
+}
+.mrtj h3{
+    color: rgb(239, 232, 232);
+    font-size: 25px;
+}
+.mrtj h5{
+    color: rgb(184, 176, 176);
+    width: 85%;
+    font-size: 15px;
+    width: 100%;
+}
+.reasons{
+    display: flex;
+    gap: 20px;
+    height: 85%;
+}
+.tv-logo{
+    display: flex;
+    height: 60%;
+   justify-content: end;
+   align-items: end;
+}
+
+/* css codes for frequently asked questions */
+.faq{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 85vw;
+    margin: 60px auto;
+}
+.faq h2{
+    font-size: 24px;
+    padding: 10px 0px;
+}
+.faq h3{
+    font-size: 24px;
+}
+.questions{
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 12px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.questions:hover{
+    background-color: #393939;
+}
+
+/* css code for ready to watch section */
+.rtw{
+    width: 60vw;
+    margin: 40px auto;
+}
+.rtw h3{
+    color:white;
+    text-align: center;
+    font-size: 16px;
+}
+.rtw-buttons{
+    margin-top: 12px;
+    /* border: 2px solid pink; */
+    display: flex;
+    gap: 10px;
+}
+.rtw-buttons input{
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(91, 85, 85);
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px 16px 8px;
+
+}
+.rtw-buttons input::placeholder{
+    font-size: 16px;
+}
+.rtw-buttons button{
+    background-color:red;
+    border: 1px solid red;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 15px 40px;
+    font-size: x-large;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.rtw-buttons button:hover{
+    background-color: rgb(211, 45, 45);
+}
+
+/* css codes for contact us section */
+.contact{
+    width: 75vw;
+    margin:60px auto;
+
+}
+.contact h3{
+    color: rgb(123, 119, 119);
+    text-decoration:underline;
+    cursor: pointer;
+}
+.grid ul li{
+    list-style: none;
+    color: rgb(165, 164, 164);
+    text-decoration:underline;
+    cursor: pointer;
+}
+.grid{
+    margin-top: 40px;
+}
+.grid ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+/* css codes for footer section */
+footer{
+    width: 77vw;
+    margin: auto;
+    height: 30vh;
+}
+footer button{
+    background-color: black;
+    color: white;
+    padding: 6px 16px 6px 14px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: large;
+}
+footer h3{
+    color: rgb(187, 184, 184);
+    font-size: 14px;
+    margin-top: 40px;
+}
+footer p{
+    color: rgb(150, 147, 147);
+    font-size: 13px;
+    margin-top: 40px;
+}
