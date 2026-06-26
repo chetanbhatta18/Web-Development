@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design the grid</title>
+    <style>
+        /* css for navbar */
+
+nav{
+    display:flex;
+
+    justify-content: flex-end;
+    gap: 3vw;
+    margin: 0 5vw;
+    
+
+}
+.common{
+
+    text-transform: capitalize;
+    padding: 5px 5px;
+}
+.common:hover{
+    background-color:rgb(243, 243, 152) ;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.img{
+    height: 2vh;
+
+}
+.ultra{
+    height: 9vh;
+    border-radius: 15vw;
+    position: absolute;
+    left: 18vw;
+}
+.ultra:hover{
+    background-color:rgb(243, 243, 152) ;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* css for download text and download mac version button */
+p:first-child{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: xxx-large;
+
+}
+p:nth-child(2){
+    text-align: center;
+    font-size: x-large;
+    padding: 0px 280px;
+    font-weight:lighter;
+}
+div button{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #24c7bf;
+    height:7vh;
+    color: white;
+    text-transform: uppercase;
+
+}
+.button{
+    display: grid;
+    justify-content: center;
+}
+.button button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.downloadmacbtn{
+    text-decoration: none;
+}
+/* css to design the grid */
+.grid{
+    background-color: rgba(204, 228, 229, 0.641);
+    height: 26vh;
+    width: 22vw;
+}
+.grid h3{
+    text-align: center;
+}
+.grid h5{
+    text-align: center;
+}
+.download{
+    list-style: none;
+    border: 2px solid black;
+    max-width: 40%;
+    border-radius: 10px;
+    padding: 10px 3px;
+    /* height: 3vh; */
+    height: 20%;
+}
+.grid ol{
+    padding: 0px;
+    margin:0px 0px;
+    height: 11vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.one{
+    background-color: skyblue;
+}
+.two{
+    background-color: rgb(23, 200, 23);
+}
+.main-grid{
+    margin-top: 3vh;
+    display: grid;
+    gap: 5px 0px;
+    justify-content: center;
+    grid-template-columns:repeat(3,24vw) ;
+    grid-template-rows: repeat(3,28vh);
+}
+.download:hover{
+    background-color: rgb(204, 229, 238);
+    cursor: pointer;
+}
+.download a{
+    text-decoration: none;
+}
+.english{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.english ol{
+    padding:30px 0 0 0 ;
+}
+/* @media screen and (max-width:1250px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-grid{
+        grid-template-columns:24vw;
+        justify-content: center;
+    }
+    .download{
+        display: flex;
+        justify-content: flex-end;
+        font-size: small;
+        padding-left:0px;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    
+} */
+    </style>
+</head>
+<body>
+    <!-- html code for navbar -->
+    <header>
+        <nav>
+           <!-- <h1 class="common">ultra edit <h6></h6></h1> -->
+           <img class="ultra" src="ultraedit.png">
+           <h4 class="common">products <img class="img" src="arrow-down-sign-to-navigate.png" alt=""></h4>
+           <h4 class="common">pricing <img class="img" src="arrow-down-sign-to-navigate.png" alt=""></h4>
+           <h4 class="common">resources <img class="img" src="arrow-down-sign-to-navigate.png" alt=""></h4>
+           <h4 class="common">about us <img class="img" src="arrow-down-sign-to-navigate.png" alt=""></h4>
+        </nav>
+    </header>
+    <!-- html code for grid -->
+    <main>
+        <p>download ultraedit for windows</p>
+        <p class="large-text">Download and try Ultraedit before you buy it! This download includes the full windows version of the text editor</p>
+        <div class="button">
+            <a class="downloadmacbtn" href="https://www.youtube.com" target="_blank"> <button>Download mac or linux version </button></a>
+        </div>
+        <!-- main html code for designing the grid -->
+        <div class="main-grid">
+        <div class="grid english">
+            <h3>English</h3>
+            <ol>
+                <li class="download one"><a href="https://www.youtube.com/watch?v=9OPwjSF15_o&list=RD9OPwjSF15_o&start_radio=1" target="_blank">Download 32-bit</a></li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div>
+        <div class="grid">
+            <h3>Deutsch</h3>
+            <h5>German</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div><div class="grid">
+            <h3>Italiano</h3>
+            <h5>Italian</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div><div class="grid">
+            <h3>Español</h3>
+            <h5>Spanish</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div><div class="grid">
+            <h3>francias</h3>
+            <h5>french</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div><div class="grid">
+            <h3>português brasileiro</h3>
+            <h5>Brazilian Portuguese</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div><div class="grid">
+            <h3>日本語</h3>
+            <h5>Japanese</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div><div class="grid">
+            <h3>한국인</h3>
+            <h5>Korean</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div>
+        <div class="grid">
+            <h3>中国人</h3>
+            <h5>Chinese</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div>
+        <div class="grid">
+            <h3>中國人</h3>
+            <h5>Chinese(traditional)</h5>
+            <ol>
+                <li class="download one">Download 32-bit</li>
+                <li class="download two">Download 64-bit</li>
+            </ol>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
